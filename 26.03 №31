@@ -1,0 +1,23 @@
+import random
+
+def generate_matrix(rows, cols):
+    return [[random.randint(1, 100) for _ in range(cols)] for _ in range(rows)]
+
+matrix = generate_matrix(4, 4)
+
+for row in matrix:
+    print(row)
+
+min_value = matrix[0][0]
+min_row = 0
+min_col = 0
+
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        if matrix[i][j] < min_value:
+            min_value = matrix[i][j]
+            min_row = i
+            min_col = j
+
+print("Минимальный элемент:", min_value)
+print("Его координаты:", min_row, min_col)
