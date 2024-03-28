@@ -1,0 +1,97 @@
+№1
+def find_max_min_number(a, b):
+    if a > b:
+        maximum = a
+        minimum = b
+    else:
+        maximum = b
+        minimum = a
+    return maximum, minimum
+
+# Пример использования
+num1 = 5.7
+num2 = 3.4
+max_num, min_num = find_max_min_number(num1, num2)
+print(f"Максимальное значение: {max_num}")
+print(f"Минимальное значение: {min_num}")
+
+№2
+def circle_fits_in_square(side_length, radius):
+    # Диаметр круга должен быть меньше или равен стороне квадрата
+    if radius * 2 <= side_length:
+        return True
+    else:
+        return False
+
+# Пример использования
+square_side = 10
+circle_radius = 4
+fits = circle_fits_in_square(square_side, circle_radius)
+if fits:
+    print("Круг вписывается в квадрат.")
+else:
+    print("Круг не вписывается в квадрат.")
+
+№3
+def calculate_function_value(x):
+    y = 3*x**2 - 2*x + 5
+    return y
+
+# Пример использования
+x_value = 2
+result = calculate_function_value(x_value)
+print(f"Значение функции у=3x^2 - 2x + 5 при x={x_value} равно {result}")
+
+№4
+def square_fits_in_circle(side_length, radius):
+    # Диагональ квадрата должна быть меньше или равна диаметру круга
+    diagonal = side_length * (2 ** 0.5)  # Формула для вычисления диагонали квадрата
+    if diagonal <= radius * 2:
+        return True
+    else:
+        return False
+
+# Пример использования
+circle_radius = 5
+square_side = 7
+fits = square_fits_in_circle(square_side, circle_radius)
+if fits:
+    print("Квадрат вписывается в круг.")
+else:
+    print("Квадрат не вписывается в круг.")
+
+№5
+def find_larger_number(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+# Пример использования
+num1 = 5.7
+num2 = 3.4
+larger_num = find_larger_number(num1, num2)
+print(f"Большее число: {larger_num}")
+
+№6
+def calculate_function_value(x):
+    y = 2 * x**2 - 3 * x + 1
+    return y
+
+# Пример использования
+x_value = 4
+result = calculate_function_value(x_value)
+print(f"Значение функции y=2x^2 - 3x + 1 при x={x_value} равно {result}")
+
+№7
+def find_smaller_number(a, b):
+    if a < b:
+        return a
+    else:
+        return b
+
+# Пример использования
+num1 = 5.7
+num2 = 3.4
+smaller_num = find_smaller_number(num1, num2)
+print(f"Меньшее число: {smaller_num}")
